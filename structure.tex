@@ -23,6 +23,8 @@
 
 \usepackage{hyperref} % Colors for links, text and headings
 
+\usepackage{longtable}
+
 \setcounter{secnumdepth}{0} % Suppress section numbering
 
 %\usepackage[proportional,scaled=1.064]{erewhon} % Use the Erewhon font
@@ -88,6 +90,12 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \end{minipage}
 \end{tabbing}
 \vspace{3mm}
+}
+
+\newcommand{\jobdetail}[3]{
+\subsection{#1}
+\textbf{#2}\newline
+#3
 }
 
 %----------------------------------------------------------------------------------------
